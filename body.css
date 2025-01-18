@@ -1,0 +1,316 @@
+/* General Styles */
+body {
+        font-family: 'Oswald', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .container {
+        width: 85%;
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+    
+    header {
+        background: #f8f8f8;
+        padding: 5px 0;
+    }
+    
+    .header-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .header-content img {
+        max-height: 50px; /* Tripled size */
+        height: auto;
+        width: auto;
+    }
+    
+    .header-input {
+        display: flex;
+        align-items: center;
+        background: #140A32;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .header-input input {
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px 0 0 5px;
+        outline: none;
+        font-size: 14px;
+        color: #333;
+        width: 70%;
+    }
+    
+    .header-input button {
+        padding: 8px;
+        border: none;
+        background: #333;
+        color: #fff;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+    
+    .header-input button img {
+        max-height: 20px; /* Reduced size */
+        margin-left: 5px;
+    }
+    
+    .header-contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .header-contact-button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 180px;
+        text-align: center;
+        margin: 20px 0;
+        background-color:#72a6da4e;
+        text-decoration: none;
+        padding: 20px 20px;
+        display: flex;
+        align-items: center;
+        color:#140A32;
+        border: 1px solid #2F2B4326;
+        border-radius: 50px;
+}
+     .header-contact-button img {
+        height: 15px;
+        margin-right: 10px;
+      }
+    .header-contact img {
+        max-height: 20px;
+        margin-bottom: 5px;
+    }
+    
+    .header-contact a {
+        color: #333;
+        text-decoration: none;
+        font-weight: bold;
+        margin-top: 5px;
+    }
+    
+    .nav {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+    
+    .nav a {
+        text-decoration: none;
+        color: #333;
+    }
+    
+    .main {
+        padding: 40px 0;
+        background: #f4f4f4;
+    }
+    
+    .main h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    
+    .main p {
+        margin-bottom: 20px;
+    }
+    
+    .main-question a {
+        display: inline-block;
+        background: #333;
+        color: white;
+        padding: 10px 10px;
+        border-radius: 50px;
+        text-decoration: none;
+        margin-right: 10px;
+    }
+    
+    .special {
+        padding: 40px 0;
+        background: #fff;
+    }
+    
+    .special-cart {
+        background-color:#ff0000;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        background: #fff;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+    
+    .special-cart h3 {
+        margin: 20px 0;
+    }
+    
+    .special-cart p {
+        font-size: 0.8rem;
+        line-height: 1.4;
+    }
+    
+    .question {
+        padding: 40px 0;
+        background: #f8f8f8;
+        text-align: center;
+    }
+    
+    .question-input input {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-right: 10px;
+    }
+    
+    .question-input button {
+        padding: 10px 20px;
+        border: none;
+        background: #333;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .main img {
+        max-width: 200px;
+        height: auto;
+        display: block;
+        margin: 20px auto;
+    }
+    
+    .main-plus {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+        margin: 20px 0;
+    }
+    
+    .main-plus img {
+        max-width: 50px;
+        height: auto;
+    }
+    
+    .main-plus p {
+        font-size: 0.8rem;
+        line-height: 1.2;
+        margin: 0;
+    }
+    
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+        .header-content {
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+    
+        .header-input {
+            margin-top: 20px;
+            width: 100%;
+        }
+    
+        .nav {
+            flex-direction: column;
+            gap: 10px;
+        }
+    
+        .special-inner {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    
+        .main-plus {
+            flex-direction: column;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .main h1 {
+            font-size: 1.5rem;
+        }
+    
+        .main p {
+            font-size: 0.9rem;
+        }
+
+        .special  {
+                padding-bottom: 80px;
+                
+               
+              }
+              
+              .special-inner {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+              
+              }
+    
+        .special-cart {
+                
+                background-color: #72a6da4e;
+                width: 50%;
+                margin-right: 20px;
+                margin-bottom: 0px;
+                border-radius: 20px;
+                padding: 95px;
+                border: 1px solid rgba(47, 43, 67, 0.15);
+              }
+              
+              .special-cart:nth-child(even) {
+                margin-right: 0;
+                
+              
+              }
+              
+              .special-cart div {
+                
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+              
+              }
+              
+              .special-cart div img {
+                height: 100px;
+                margin-right: 15px;
+        
+              }
+              
+              .special-cart div h3 {
+                font-size:  25px;
+                font-weight: 600;
+                padding-bottom: 5px;
+                border-bottom: 1px solid rgba(51, 131, 110,1);
+              }
+              
+              .special-cart div p {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 21;
+                color: rgba(47, 43, 67, 0.7);
+              }
+              
+        
+                      
+    
+        .header-content img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    
